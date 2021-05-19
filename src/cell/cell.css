@@ -1,0 +1,7 @@
+.cell {
+    padding: 8px;
+}
+
+.cell ~ .cell {
+    border-left: 1px solid darkgrey;
+}
