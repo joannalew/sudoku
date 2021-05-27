@@ -1,8 +1,8 @@
-import { Cell } from "../cell/cell";
 import * as React from "react";
+import { Cell } from "src/components/cell/cell";
+import { Coordinates } from "src/util/coordinates";
 
 import "./row.css";
-import { Coordinates } from "../../util/coordinates";
 
 type Props = {
     coordinates: Coordinates;

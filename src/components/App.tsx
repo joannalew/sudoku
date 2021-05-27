@@ -1,6 +1,8 @@
-import "./normalize.css";
-import { Grid } from "./grid/grid";
 import * as React from "react";
+
+import { Grid } from "./grid/grid";
+
+import "./normalize.css";
 
 export default function App(): React.ReactElement {
     const [activeCell, setActiveCell] = React.useState<

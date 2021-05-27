@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Section } from "../section/section";
+import { Section } from "src/components/section/section";
 
 import "./grid.css";
 

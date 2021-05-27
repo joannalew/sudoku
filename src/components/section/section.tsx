@@ -1,7 +1,8 @@
-import { Box } from "../box/box";
 import * as React from "react";
+import { Box } from "src/components/box/box";
+import { Coordinates } from "src/util/coordinates";
+
 import "./section.scss";
-import { Coordinates } from "../../util/coordinates";
 
 type Props = {
     coordinates: Coordinates;

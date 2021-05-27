@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Coordinates } from "../../util/coordinates";
+import { Coordinates } from "src/util/coordinates";
 
 import "./cell.css";
 
