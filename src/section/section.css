@@ -1,7 +1,0 @@
-.section {
-    display: flex;
-}
-
-.section ~ .section {
-    border-top: 2px solid black;
-}

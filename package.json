@@ -1,35 +1,56 @@
 {
-    "name": "react-typescript",
+    "name": "sudoku",
     "version": "1.0.0",
-    "description": "React and TypeScript example starter project",
+    "description": "",
     "keywords": [
         "typescript",
-        "react",
-        "starter"
+        "react"
     ],
-    "main": "src/index.tsx",
-    "dependencies": {
-        "react": "17.0.2",
-        "react-dom": "17.0.2",
-        "react-scripts": "4.0.3"
+    "scripts": {
+        "build": "npm run clean-dist && webpack --config=configs/webpack/prod.js",
+        "clean-dist": "rimraf dist/*",
+        "prettier": "prettier --write .",
+        "lint": "eslint --fix './src/**/*.{js,ts,tsx}'",
+        "test": "jest --coverage --watchAll --config=configs/jest.json",
+        "start": "npm run start-dev",
+        "start-dev": "webpack serve --config=configs/webpack/dev.js",
+        "start-prod": "npm run build && node express.js"
     },
     "devDependencies": {
-        "@types/react": "17.0.0",
-        "@types/react-dom": "17.0.0",
-        "prettier": "2.3.0",
-        "typescript": "3.9.9"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "prettier": "prettier --write ."
-    },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "not op_mini all"
-    ]
+        "@babel/cli": "7.13.16",
+        "@babel/core": "7.14.0",
+        "@babel/preset-env": "7.14.0",
+        "@babel/preset-react": "7.13.13",
+        "@babel/preset-typescript": "7.13.0",
+        "@types/jest": "26.0.23",
+        "@types/node": "14.14.34",
+        "@types/react": "17.0.4",
+        "@types/react-dom": "17.0.3",
+        "@typescript-eslint/eslint-plugin": "4.22.0",
+        "@typescript-eslint/parser": "4.22.0",
+        "babel-loader": "8.2.2",
+        "css-loader": "5.2.4",
+        "eslint": "7.25.0",
+        "eslint-config-prettier": "8.3.0",
+        "eslint-plugin-prettier": "3.4.0",
+        "eslint-plugin-react": "7.23.2",
+        "express": "4.17.1",
+        "file-loader": "6.2.0",
+        "html-webpack-plugin": "5.3.1",
+        "image-webpack-loader": "7.0.1",
+        "jest": "26.6.3",
+        "node-sass": "5.0.0",
+        "prettier": "2.2.1",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-hot-loader": "4.13.0",
+        "rimraf": "3.0.2",
+        "sass-loader": "11.0.1",
+        "style-loader": "2.0.0",
+        "typescript": "4.2.4",
+        "webpack": "5.36.1",
+        "webpack-cli": "4.6.0",
+        "webpack-dev-server": "3.11.2",
+        "webpack-merge": "5.7.3"
+    }
 }
